@@ -1,12 +1,15 @@
 import React from 'react';
+import how1 from '../assets/Howitworks1.png'
+import how2 from '../assets/howitworks2.png'
+import how3 from '../assets/howitworks3.png'
 
 const HeroSection = () => {
   return (
-    <section className="hero-section min-h-screen relative overflow-hidden">
+    <section className="hero-section min-h-screen relative overflow-hidden mb-10">
       <div className="relative z-10">
-        <div className="pt-20 pb-32 px-6">
+        <div className="pt-20  px-6">
           {/* Main Heading */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h1
               className="text-[60px]  font-rozha mb-4 leading-tight 
               bg-clip-text text-transparent"
@@ -23,7 +26,7 @@ const HeroSection = () => {
 
           {/* 🔥 Search Section (Updated as per design) */}
           <div
-            className="w-full rounded-[25px] mx-auto mb-32 px-16 py-8"
+            className="w-full rounded-[25px] mx-auto mb-16 px-16 py-8"
             style={{
               boxShadow: '9px 4px 10.9px 0px #FFFFFF0A',
               backgroundColor: '#FFFFFF0A',
@@ -87,27 +90,19 @@ const HeroSection = () => {
           </div>
 
           {/* ✅ How It Works Section (Unchanged) */}
-          <div className="text-center mb-20 px-16 py-8 rounded-[25px]"
+          <div className="text-center  px-16 py-8 rounded-[25px]"
           style={{
               boxShadow: '9px 4px 10.9px 0px #FFFFFF0A',
               backgroundColor: '#FFFFFF0A',
             }}>
-            <h2 className="text-white text-3xl font-bold mb-16">
+            <h2 className="text-white text-3xl font-bold mb-10">
               How It Works..?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8  px-5  mx-auto">
               {/* Step 1 */}
               <div className="text-center">
                 <div className="w-24 h-24 mx-auto mb-6 relative">
-                  <div className="w-full h-full bg-yellow-accent rounded-2xl flex items-center justify-center transform rotate-3">
-                    <div className="w-16 h-12 bg-navy rounded-lg flex items-center justify-center">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                    </div>
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-navy rounded-full"></div>
-                  </div>
-                  <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-gray-300 rounded-full"></div>
+                  <img src={how1} alt="" />
                 </div>
                 <h3 className="text-white text-xl font-semibold mb-3">
                   Upload Your Photos
@@ -119,10 +114,8 @@ const HeroSection = () => {
 
               {/* Step 2 */}
               <div className="text-center">
-                <div className="w-24 h-24 mx-auto mb-6 relative">
-                  <div className="w-full h-full bg-pink-400 rounded-2xl flex items-center justify-center">
-                    <div className="w-4 h-4 bg-red-500 rounded-full"></div>
-                  </div>
+               <div className="w-24 h-24 mx-auto mb-6 relative">
+                  <img src={how2} alt="" />
                 </div>
                 <h3 className="text-white text-xl font-semibold mb-3">
                   Customize & Generate 3D View
@@ -135,9 +128,7 @@ const HeroSection = () => {
               {/* Step 3 */}
               <div className="text-center">
                 <div className="w-24 h-24 mx-auto mb-6 relative">
-                  <div className="w-full h-full bg-blue-primary rounded-2xl flex items-center justify-center transform -rotate-3">
-                    <div className="w-8 h-6 bg-white rounded-sm transform rotate-12"></div>
-                  </div>
+                  <img src={how3} alt="" />
                 </div>
                 <h3 className="text-white text-xl font-semibold mb-3">
                   Share via Link or QR Code
