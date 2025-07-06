@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Logo from '../assets/Navbar/Logo.png';
 
 const Navbar = () => {
   const location = useLocation();
+    const navigate = useNavigate();
+
   const [showDropdown, setShowDropdown] = useState(false);
 
   const navLinks = [
@@ -23,7 +25,12 @@ const Navbar = () => {
   ];
 
   const isMoreInfoActive = location.pathname.startsWith('/more-info');
-
+  const handleLoginClick = () => {
+    navigate('/login');
+  };
+  const handleSignupClick=()=>{
+    navigate('/choose-signup')
+  }
   return (
     <nav className="fixed top-0 left-0 z-50 bg-[#1C1C1C] w-full h-[101px] px-8">
       <div className="flex items-center justify-between h-full">
@@ -47,10 +54,9 @@ const Navbar = () => {
                   <Link
                     to={link.path}
                     className={`font-[600] font-rubik leading-[100%] tracking-normal cursor-pointer
-                      ${
-                        isMoreInfoActive
-                          ? 'text-white relative after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-9 after:h-[2px] after:bg-[#CFE9FF]'
-                          : 'text-[#D4D4D4] hover:text-white transition'
+                      ${isMoreInfoActive
+                        ? 'text-white relative after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-9 after:h-[2px] after:bg-[#CFE9FF]'
+                        : 'text-[#D4D4D4] hover:text-white transition'
                       }
                       text-[18px] max-[1512px]:text-[16px]`}
                   >
@@ -66,11 +72,10 @@ const Navbar = () => {
                         <Link
                           key={item.name}
                           to={item.path}
-                          className={`block px-4 py-2 rounded-lg text-sm font-medium ${
-                            location.pathname === item.path
+                          className={`block px-4 py-2 rounded-lg text-sm font-medium ${location.pathname === item.path
                               ? 'bg-[#404040] text-white'
                               : 'text-[#D4D4D4] hover:bg-[#404040] hover:text-white'
-                          }`}
+                            }`}
                           onClick={() => setShowDropdown(false)}
                         >
                           {item.name}
@@ -84,10 +89,9 @@ const Navbar = () => {
                   key={link.name}
                   to={link.path}
                   className={`font-[600] font-rubik leading-[100%] tracking-normal
-                    ${
-                      location.pathname === link.path
-                        ? 'text-white relative after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-9 after:h-[2px] after:bg-[#CFE9FF]'
-                        : 'text-[#D4D4D4] hover:text-white transition'
+                    ${location.pathname === link.path
+                      ? 'text-white relative after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-9 after:h-[2px] after:bg-[#CFE9FF]'
+                      : 'text-[#D4D4D4] hover:text-white transition'
                     }
                     text-[18px] max-[1512px]:text-[16px]`}
                 >
@@ -99,7 +103,7 @@ const Navbar = () => {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-[20px]">
-            <button
+            <button onClick={handleSignupClick}
               className="bg-[#CCE7F6] rounded-[40.92px] 
                 w-[137.54px] h-[39.73px] 
                 flex items-center justify-center 
@@ -110,6 +114,7 @@ const Navbar = () => {
             </button>
 
             <button
+              onClick={handleLoginClick}
               className="bg-transparent rounded-[40.92px] border-[2px] border-[#CCE7F6]
                 w-[137.54px] h-[39.73px] 
                 flex items-center justify-center 

@@ -95,17 +95,20 @@ const Price = () => {
       <div className="relative z-10 mt-[110px] w-full max-w-7xl px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-8">
+          <p className='text-[#CCE7F6] text-[28px] font-rubik font-extrabold'>Our Pricing & Plans</p>
+          <p className='text-[15px] text-[#9C9C9C]'>This plan allows you to create Snaplinks</p>
           <div className="inline-flex items-center text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+
             <span className="mr-2">⭐</span>
             1 credit = 1 Snaplink
           </div>
-          <p className="text-white text-lg max-w-md mx-auto">
+          <p className="text-white text-[14px] max-w-md mx-auto">
             Once your plan expires, you will no longer be able to create or access existing Snaplinks.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="flex flex-col lg:flex-row gap-6 items-center justify-center">
+        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center relative">
           {plans.map((plan) => (
             <div key={plan.id} className="relative w-80">
 
@@ -114,81 +117,63 @@ const Price = () => {
                 <img
                   src={BasicPlanSaverBadge}
                   alt="New Badge"
-                  className="absolute z-20 top-[-20px] right-[-20px] w-16 h-16"
+                  className="absolute z-20 top-[-0px] right-[-22px] w-[120px] h-[50px]  object-fill bg-no-repeat "
                 />
               )}
               {plan.badge === 'Saver' && (
                 <img
                   src={GoldPlanSaverBadge}
                   alt="Saver Badge"
-                  className="absolute  z-20 top-[-20px] right-[-20px] w-16 h-16"
+                  className="absolute  z-20 top-[-0px] right-[-22px] w-[120px] h-[50px]  object-fill bg-no-repeat"
                 />
               )}
 
               {/* Card with Vector */}
               <div className="relative">
-                {/* Vector placement */}
-                {plan.id === 'basic' && (
-                  <img
-                    src={plan.vector}
-                    alt={`${plan.name} Vector`}
-                    className="absolute top-0 right-0 w-24"
-                  />
-                )}
-                {plan.id === 'standard' && (
-                  <img
-                    src={plan.vector}
-                    alt={`${plan.name} Vector`}
-                    className="absolute top-0 right-0 w-24"
-                  />
-                )}
-                {plan.id === 'gold' && (
-                  <>
-                    <img
-                      src={plan.vector}
-                      alt={`${plan.name} Vector Top`}
-                      className="absolute top-0 right-0 w-24"
-                    />
-                    <img
-                      src={plan.vector}
-                      alt={`${plan.name} Vector Bottom`}
-                      className="absolute bottom-0 left-0 w-24"
-                    />
-                  </>
-                )}
-
-                <div className={`${plan.cardBg} rounded-tl-[73.83px] rounded-tr-[16.41px] rounded-bl-[16.41px] rounded-br-[30.57px] p-6 w-full shadow-2xl transform transition-all duration-300  relative z-10`}>
+             
+                <div className={`${plan.cardBg} rounded-tl-[73.83px] rounded-tr-[16.41px] rounded-bl-[16.41px] rounded-br-[30.57px] p-6 w-full shadow-2xl transform transition-all duration-300  mb-20 relative z-10`}>
                   {/* Header */}
-                  <div className={`${plan.headerBg} rounded-2xl p-4 mb-6 text-white relative overflow-hidden`}>
+                  <div className={`${plan.headerBg}  to rounded-tr-[19.57px] rounded-bl-[11.74px] rounded-br-[0.78px] p-4 mb-6 w-[145px] h-[120px] text-white absolute top-14 -left-5 overflow-hidden`}>
                     <div className="relative z-10">
-                      <div className="text-3xl font-bold">RS. {plan.price}/-</div>
+                      <div className="text-[26.25px] font-bold">RS. {plan.price}/-</div>
                       <div className="text-sm opacity-90">{plan.period}</div>
                       <div className="text-xs opacity-75 mt-1">{plan.yearlyPrice}/- Per Year</div>
                     </div>
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-white opacity-10 rounded-full -mr-10 -mt-10"></div>
-                    <div className="absolute bottom-0 left-0 w-16 h-16 bg-white opacity-10 rounded-full -ml-8 -mb-8"></div>
                   </div>
-
-                  {/* Plan name */}
-                  <div className="text-center mb-6">
-                    <h3 className={`text-2xl font-bold ${plan.id === 'basic' ? 'text-[#3147C1]' : plan.id === 'standard' ? 'text-[#B2880B]' : 'text-[#A93C21]'}`}>
-                      {plan.name}
-                    </h3>
+                  <div className="mt-10">
+                    <img
+                      src={plan.vector}
+                      alt={`${plan.name} Vector`}
+                      className="absolute top-30 right-0 w-30"
+                    />
+                    <img
+                      src={plan.vector}
+                      alt={`${plan.name} Vector`}
+                      className="absolute top-16 right-5 w-[100px]"
+                    />
                   </div>
+                  <div className="mt-[180px]">
+                    {/* Plan name */}
+                    <div className="text-center mb-6">
+                      <h3 className={`text-2xl font-bold ${plan.id === 'basic' ? 'text-[#3147C1]' : plan.id === 'standard' ? 'text-[#B2880B]' : 'text-[#A93C21]'}`}>
+                        {plan.name}
+                      </h3>
+                    </div>
 
-                  {/* Features */}
-                  <div className="space-y-3 mb-8">
-                    {plan.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center justify-center text-sm bg-white p-2 rounded">
-                        <span className='font-normal text-center' style={{color: plan.textColor}}>{feature}</span>
-                      </div>
-                    ))}
+                    {/* Features */}
+                    <div className="space-y-3 mb-8">
+                      {plan.features.map((feature, featureIndex) => (
+                        <div key={featureIndex} className="flex items-center justify-center text-sm bg-white p-2 rounded">
+                          <span className='font-normal text-center' style={{ color: plan.textColor }}>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Button */}
+                    <button className={`w-full ${plan.buttonBg} text-white py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-lg`}>
+                      Purchase Now
+                    </button>
                   </div>
-
-                  {/* Button */}
-                  <button className={`w-full ${plan.buttonBg} text-white py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-lg`}>
-                    Purchase Now
-                  </button>
                 </div>
               </div>
             </div>
