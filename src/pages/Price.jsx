@@ -97,7 +97,7 @@ const Price = () => {
         <div className="text-center mb-8">
           <p className='text-[#CCE7F6] text-[28px] font-rubik font-extrabold'>Our Pricing & Plans</p>
           <p className='text-[15px] text-[#9C9C9C]'>This plan allows you to create Snaplinks</p>
-          <div className="inline-flex items-center text-white px-4 py-2 rounded-full text-[15px]font-medium mb-4">
+          <div className="inline-flex items-center text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
 
             <span className="mr-2">⭐</span>
             1 credit = 1 Snaplink
@@ -130,7 +130,7 @@ const Price = () => {
 
               {/* Card with Vector */}
               <div className="relative">
-
+             
                 <div className={`${plan.cardBg} rounded-tl-[73.83px] rounded-tr-[16.41px] rounded-bl-[16.41px] rounded-br-[30.57px] p-6 w-full shadow-2xl transform transition-all duration-300  mb-20 relative z-10`}>
                   {/* Header */}
                   <div className={`${plan.headerBg}  to rounded-tr-[19.57px] rounded-bl-[11.74px] rounded-br-[0.78px] p-4 mb-6 w-[145px] h-[120px] text-white absolute top-14 -left-5 overflow-hidden`}>

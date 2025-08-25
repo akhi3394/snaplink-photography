@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
         {/* Header */}
         <div className="text-center mb-6">
           <h1 className="text-[32px] max-[1440px]:text-[28px] font-[700] text-white font-rubik">
-            PRIVACY <span className="text-[#CCE7F6]">POLICY</span>
+            ANIPICX <span className="text-[#CCE7F6]">PRIVACY POLICY</span>
           </h1>
           <div className="italic text-[#DCDCDC] text-[14px] font-rubik">
             Effective Date: 12/02/2025
@@ -25,10 +25,11 @@ const PrivacyPolicy = () => {
 
         {/* Scrollable Content */}
         <div className="h-[calc(100vh-220px)] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-[#5B5B5B] scrollbar-track-transparent">
-
           <p className="text-[16px] text-[#A3A3A3] leading-[24px] font-rubik mb-4 text-start">
-            Welcome to Snaplink. Your privacy is important to us. This Privacy Policy explains how we collect, use,
-            store, and protect your personal information when you use our platform.
+            Welcome to AniPicx! We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website and use our services.
+          </p>
+          <p className="text-[16px] text-[#A3A3A3] leading-[24px] font-rubik mb-4 text-start">
+            We provide end-to-end encryption for all your data and do not share any data with third parties for any purpose whatsoever.
           </p>
 
           <div className="border-b border-[#4F4F4F] mb-4"></div>
@@ -40,26 +41,21 @@ const PrivacyPolicy = () => {
               <h2 className="text-[18px] font-[600] text-white font-rubik">1. Information We Collect</h2>
             </div>
             <p className="text-[16px] text-[#DCDCDC] leading-[24px] font-rubik text-start">
-              We collect limited information to provide you with a smooth and secure experience:
+              We collect the following types of information:
             </p>
-
             <ul className="ml-4 mt-2 space-y-2">
               {[
                 {
-                  label: "Account Information:",
-                  text: "Your name, email address, and login details.",
-                },
-                {
-                  label: "Uploaded Content:",
-                  text: "Photos, albums, and related media you upload.",
+                  label: "Personal Information:",
+                  text: "Name, email address, phone number, and payment details.",
                 },
                 {
                   label: "Usage Data:",
-                  text: "Device type, browser, IP address, and activity logs.",
+                  text: "Information about how you interact with our website and services, including IP address, browser type, and pages visited.",
                 },
                 {
-                  label: "Payment Information:",
-                  text: "Collected securely via trusted third-party payment processors. (We do not store card details.)",
+                  label: "Cookies:",
+                  text: "We use cookies to enhance your experience on our site. Cookies are small data files stored on your device.",
                 },
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-2">
@@ -70,43 +66,107 @@ const PrivacyPolicy = () => {
                 </li>
               ))}
             </ul>
-
-
             <div className="border-b border-[#4F4F4F] mt-4"></div>
           </div>
 
-          {/* 2. How We Use Your Data */}
+          {/* 2. How We Use Your Information */}
           <div className="mb-5">
             <div className="flex items-center gap-2 mb-1">
               <FaTools className="text-[#FFD700] text-[18px]" />
-              <h2 className="text-[18px] font-[600] text-white font-rubik">2. How We Use Your Data</h2>
+              <h2 className="text-[18px] font-[600] text-white font-rubik">2. How We Use Your Information</h2>
             </div>
             <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
-              We use your information to:
+              We use the information we collect for the following purposes:
             </p>
-
             <ul className="ml-4 mt-2 space-y-2">
               {[
-                "Create and manage your Snaplink albums",
-                "Generate QR codes and shareable links",
-                "Communicate important updates or support messages",
-                "Improve system performance and user experience",
-                "Prevent unauthorized access or misuse",
-                "We do not sell or share your personal data with third-party marketers.",
+                "To provide and improve our services.",
+                "To process transactions and manage your subscription.",
+                "To communicate with you about updates, promotions, and support.",
+                "To analyze website usage and enhance user experience.",
               ].map((text, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <div className="mt-1 h-2 w-2 rounded-full bg-[#f2f2f2] shrink-0"></div>
-                  <span className="text-[16px] text-[#CCE7F6] font-[500] font-rubik">
-                    {text}
-                  </span>
+                  <span className="text-[16px] text-[#CCE7F6] font-[500] font-rubik">{text}</span>
                 </li>
               ))}
             </ul>
-
-
             <div className="border-b border-[#4F4F4F] mt-4"></div>
           </div>
 
+          {/* 3. Sharing Your Information */}
+          <div className="mb-5">
+            <div className="flex items-center gap-2 mb-1">
+              <BsInfoCircleFill className="text-[#84C1FF] text-[18px]" />
+              <h2 className="text-[18px] font-[600] text-white font-rubik">3. Sharing Your Information</h2>
+            </div>
+            <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
+              We do not sell or rent your personal information to third parties. We may share your information with:
+            </p>
+            <ul className="ml-4 mt-2 space-y-2">
+              {[
+                "Service Providers: Third-party vendors who assist us in operating our website and providing our services.",
+                "Legal Requirements: When required by law or in response to legal requests.",
+                "Business Transfers: In connection with any merger, acquisition, or sale of company assets.",
+              ].map((text, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <div className="mt-1 h-2 w-2 rounded-full bg-[#f2f2f2] shrink-0"></div>
+                  <span className="text-[16px] text-[#CCE7F6] font-[500] font-rubik">{text}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="border-b border-[#4F4F4F] mt-4"></div>
+          </div>
+
+          {/* 4. Data Security */}
+          <div className="mb-5">
+            <div className="flex items-center gap-2 mb-1">
+              <FaTools className="text-[#FFD700] text-[18px]" />
+              <h2 className="text-[18px] font-[600] text-white font-rubik">4. Data Security</h2>
+            </div>
+            <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
+              We implement appropriate security measures to protect your information from unauthorized access, disclosure, alteration, or destruction. However, no online data transmission or storage system can be guaranteed to be 100% secure.
+            </p>
+            <div className="border-b border-[#4F4F4F] mt-4"></div>
+          </div>
+
+          {/* 5. Your Rights */}
+          <div className="mb-5">
+            <div className="flex items-center gap-2 mb-1">
+              <BsInfoCircleFill className="text-[#84C1FF] text-[18px]" />
+              <h2 className="text-[18px] font-[600] text-white font-rubik">5. Your Rights</h2>
+            </div>
+            <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
+              You have the right to:
+            </p>
+            <ul className="ml-4 mt-2 space-y-2">
+              {[
+                "Access and update your personal information.",
+                "Request deletion of your personal information.",
+                "Opt-out of receiving promotional communications from us.",
+              ].map((text, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <div className="mt-1 h-2 w-2 rounded-full bg-[#f2f2f2] shrink-0"></div>
+                  <span className="text-[16px] text-[#CCE7F6] font-[500] font-rubik">{text}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
+              To exercise these rights, please contact us at hello@AniPicx.com.
+            </p>
+            <div className="border-b border-[#4F4F4F] mt-4"></div>
+          </div>
+
+          {/* 6. Changes to This Policy */}
+          <div className="mb-5">
+            <div className="flex items-center gap-2 mb-1">
+              <FaTools className="text-[#FFD700] text-[18px]" />
+              <h2 className="text-[18px] font-[600] text-white font-rubik">6. Changes to This Policy</h2>
+            </div>
+            <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
+              We may update this Privacy Policy from time to time. Any changes will be posted on this page, and your continued use of our services constitutes acceptance of the updated policy.
+            </p>
+          </div>
         </div>
       </div>
     </div>

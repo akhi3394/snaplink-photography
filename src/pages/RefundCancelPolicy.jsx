@@ -16,7 +16,7 @@ const RefundCancelPolicy = () => {
         {/* Header */}
         <div className="text-center mb-6">
           <h1 className="text-[32px] max-[1440px]:text-[28px] font-[700] text-white font-rubik">
-            REFUND/CANCEL <span className="text-[#CCE7F6]">POLICY</span>
+            ANIPICX <span className="text-[#CCE7F6]">REFUND POLICY</span>
           </h1>
           <p className="italic text-[#DCDCDC] text-[14px] font-rubik">
             Effective Date: 12/02/2025
@@ -26,23 +26,25 @@ const RefundCancelPolicy = () => {
         {/* Scrollable Content */}
         <div className="h-[calc(100vh-220px)] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-[#5B5B5B] scrollbar-track-transparent">
           <p className="text-[16px] text-[#A3A3A3] leading-[24px] font-rubik mb-4 text-start">
-            We value transparency and fairness. Please read our refund and cancellation policy carefully before subscribing to any plan or purchasing credits.
+            Thank you for choosing AniPicx. We are committed to providing you with the best possible service. If you are not satisfied with your purchase, please review our refund policy to understand the process for requesting a refund.
           </p>
 
           <div className="border-b border-[#4F4F4F] mb-4"></div>
 
-          {/* Cancellation Policy */}
+          {/* Eligibility for Refund */}
           <div className="mb-5">
             <div className="flex items-center gap-2 mb-1">
               <BsInfoCircleFill className="text-[#84C1FF] text-[18px]" />
-              <h2 className="text-[18px] font-[600] text-white font-rubik">Cancellation Policy</h2>
+              <h2 className="text-[18px] font-[600] text-white font-rubik">1. Eligibility for Refund</h2>
             </div>
+            <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
+              Refunds are available under the following conditions:
+            </p>
             <ul className="ml-4 mt-2 space-y-2">
               {[
-                'You can cancel your subscription at any time through your account settings.',
-                'Once cancelled, your plan will remain active until the end of the current billing cycle.',
-                'After cancellation, you will lose access to premium features and stored content when the billing cycle ends.',
-                'Auto-renewal will be disabled upon cancellation.',
+                "If you experience technical issues with the AniPicx platform that we are unable to resolve within a reasonable time frame.",
+                "If there is a billing error that was not corrected after contacting our support team.",
+                "If you cancel your subscription within the first 7 days of purchase and have not used any services.",
               ].map((text, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <div className="mt-1 h-2 w-2 rounded-full bg-[#f2f2f2] shrink-0"></div>
@@ -53,21 +55,20 @@ const RefundCancelPolicy = () => {
             <div className="border-b border-[#4F4F4F] mt-4"></div>
           </div>
 
-          {/* Refund Policy */}
+          {/* Non-Refundable Items */}
           <div className="mb-5">
             <div className="flex items-center gap-2 mb-1">
               <FaTools className="text-[#FFD700] text-[18px]" />
-              <h2 className="text-[18px] font-[600] text-white font-rubik">Refund Policy</h2>
+              <h2 className="text-[18px] font-[600] text-white font-rubik">2. Non-Refundable Items</h2>
             </div>
             <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
-              All purchases are final. We do not offer refunds for:
+              The following items are non-refundable:
             </p>
             <ul className="ml-4 mt-2 space-y-2">
               {[
-                'Unused credits',
-                'Partially used plans',
-                'Plan cancellations after payment',
-                'Refunds will only be issued in cases of duplicate payments or technical errors caused by our system.',
+                "Fees for subscription plans after the initial 7-day period.",
+                "Any services or features used during the subscription period.",
+                "Custom branding or design work completed as part of your subscription.",
               ].map((text, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <div className="mt-1 h-2 w-2 rounded-full bg-[#f2f2f2] shrink-0"></div>
@@ -75,22 +76,59 @@ const RefundCancelPolicy = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-[16px] text-[#A3A3A3] leading-[24px] font-rubik mt-2 text-start">
-              If you believe you are eligible for a refund, please contact our support team within 7 days of the transaction.
+            <div className="border-b border-[#4F4F4F] mt-4"></div>
+          </div>
+
+          {/* Refund Request Process */}
+          <div className="mb-5">
+            <div className="flex items-center gap-2 mb-1">
+              <BsInfoCircleFill className="text-[#84C1FF] text-[18px]" />
+              <h2 className="text-[18px] font-[600] text-white font-rubik">3. Refund Request Process</h2>
+            </div>
+            <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
+              To request a refund, please follow these steps:
+            </p>
+            <ul className="ml-4 mt-2 space-y-2">
+              {[
+                "Contact our support team via email at hello@AniPicx.com with your refund request.",
+                "Provide your order details and a brief explanation of the reason for your refund request.",
+                "Our team will review your request and respond within 5-7 business days.",
+                "If your request is approved, we will process the refund to the original payment method used for the purchase.",
+              ].map((text, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <div className="mt-1 h-2 w-2 rounded-full bg-[#f2f2f2] shrink-0"></div>
+                  <span className="text-[16px] text-[#CCE7F6] font-[500] font-rubik">{text}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="border-b border-[#4F4F4F] mt-4"></div>
+          </div>
+
+          {/* Changes to the Refund Policy */}
+          <div className="mb-5">
+            <div className="flex items-center gap-2 mb-1">
+              <FaTools className="text-[#FFD700] text-[18px]" />
+              <h2 className="text-[18px] font-[600] text-white font-rubik">4. Changes to the Refund Policy</h2>
+            </div>
+            <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
+              We may update or modify this refund policy at any time. Any changes will be posted on this page, and your continued use of our services will constitute acceptance of the updated policy.
             </p>
             <div className="border-b border-[#4F4F4F] mt-4"></div>
           </div>
 
-          {/* Important Notes */}
+          {/* Contact Us */}
           <div className="mb-5">
             <div className="flex items-center gap-2 mb-1">
               <BsInfoCircleFill className="text-[#84C1FF] text-[18px]" />
-              <h2 className="text-[18px] font-[600] text-white font-rubik">Important Notes</h2>
+              <h2 className="text-[18px] font-[600] text-white font-rubik">5. Contact Us</h2>
             </div>
+            <p className="text-[16px] text-[#CCE7F6] leading-[24px] font-rubik text-start">
+              If you have any questions or concerns regarding our refund policy, please contact us:
+            </p>
             <ul className="ml-4 mt-2 space-y-2">
               {[
-                'Once your plan expires, you may no longer be able to create or access Snaplinks albums.',
-                'We are not responsible for missed cancellations due to user inaction or delayed notifications.',
+                "Email: hello@AniPicx.com",
+                "Address: Aligarh, India",
               ].map((text, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <div className="mt-1 h-2 w-2 rounded-full bg-[#f2f2f2] shrink-0"></div>
