@@ -12,7 +12,7 @@ const Home = () => {
                 <img
                     src={Camera}
                     alt="Camera"
-                    className="fixed top-8 right-0 md:top-10 lg:top-12  w-[150px] md:w-[180px] lg:w-[220px] object-contain z-20"
+                    className="fixed top-8 right-0 md:top-10 lg:top-12  w-[150px] md:w-[180px] lg:w-[220px] object-contain z-10"
                 />
             </div>
             <div className="relative mt-[101px] w-full min-h-screen overflow-hidden">
