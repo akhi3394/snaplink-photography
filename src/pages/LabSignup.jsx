@@ -35,11 +35,11 @@ const LabSignup = () => {
         <div className="bg-white bg-opacity-10 xl:mt-48 2xl:mt-0 backdrop-blur-md p-4 sm:p-6 rounded-lg  mt-60 lg:mt-0 border border-white/30 w-full max-w-[1100px] text-center shadow-[0_8px_32px_0_rgba(0,0,0,0.37)]">
           
           {/* Logo */}
-          <div className="absolute -top-6 sm:-top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-10">
+          <div className="absolute -top-5 sm:-top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-12">
             <img
               src={Logo}
               alt="AniPicx Logo"
-              className="w-[60px] h-[75px] sm:w-[80px] sm:h-[100px] object-contain"
+              className="w-[300px] h-[300px] z-50 object-contain"
             />
           </div>
 

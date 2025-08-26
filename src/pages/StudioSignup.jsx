@@ -55,7 +55,7 @@ const StudioSignup = () => {
             <img
               src={Logo}
               alt="Snaplink Logo"
-              className="w-[70px] h-[95px] sm:w-[90px] sm:h-[120px] lg:w-[104px] lg:h-[142px] object-contain"
+              className="w-[300px] h-[150px] sm:w-[200px] sm:h-[120px] lg:w-[300px] lg:h-[300px] object-contain"
             />
           </div>
 
