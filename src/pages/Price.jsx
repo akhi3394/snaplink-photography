@@ -96,14 +96,14 @@ const Price = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <p className='text-[#CCE7F6] text-[28px] font-rubik font-extrabold'>Our Pricing & Plans</p>
-          <p className='text-[15px] text-[#9C9C9C]'>This plan allows you to create Snaplinks</p>
+          <p className='text-[15px] text-[#9C9C9C]'>This plan allows you to create AniPicx</p>
           <div className="inline-flex items-center text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
 
             <span className="mr-2">⭐</span>
-            1 credit = 1 Snaplink
+            1 credit = 1 AniPicx
           </div>
           <p className="text-white text-[14px] max-w-md mx-auto">
-            Once your plan expires, you will no longer be able to create or access existing Snaplinks.
+            Once your plan expires, you will no longer be able to create or access existing AniPicx.
           </p>
         </div>
 

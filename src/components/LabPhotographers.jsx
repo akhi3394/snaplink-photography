@@ -45,7 +45,7 @@ const LabPhotographers = () => {
         <div>
           <h1 className="text-[28.88px] font-extrabold text-start text-[#CCE7F6]">All Photographers</h1>
           <p className="text-sm text-[#B0B0B0] mt-1 text-start">
-            View, manage, and share all your Snaplink albums in one place.
+            View, manage, and share all your AniPicx albums in one place.
           </p>
         </div>
         <button className=" text-[#070B67] px-5 py-2 rounded-lg text-sm font-medium shadow-md"

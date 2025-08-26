@@ -89,7 +89,7 @@ const LabDashboard = () => {
               <span className="text-[#A9A9A9]">5 days ago</span>
             </li>
             <li>
-              📤 Album <strong>"BabyShoot__Aarav"</strong> shared via Snaplink –{" "}
+              📤 Album <strong>"BabyShoot__Aarav"</strong> shared via AniPicx –{" "}
               <span className="text-[#A9A9A9]">Yesterday</span>
             </li>
           </ul>

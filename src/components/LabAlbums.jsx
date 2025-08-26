@@ -42,7 +42,7 @@ const LabAlbums = () => {
         <div className="flex-1">
           <h2 className="text-[28.88px] font-extrabold mb-1 text-start text-[#CCE7F6]">All Albums</h2>
           <p className="text-sm text-start text-[#B0B0B0]">
-            View, manage, and share all your Snaplink albums in one place
+            View, manage, and share all your AniPicx albums in one place
           </p>
         </div>
 

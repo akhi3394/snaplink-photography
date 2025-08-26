@@ -23,7 +23,7 @@ const LabAddAlbum = () => {
             Create New Album
           </h1>
           <p className="text-sm text-[#B0B0B0] mt-1 font-rubik">
-            Create and customize your Snaplink album in just a few steps.
+            Create and customize your AniPicx album in just a few steps.
           </p>
         </div>
       </div>

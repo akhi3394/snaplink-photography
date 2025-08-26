@@ -4,7 +4,7 @@ const StudioCreateNew = () => {
   return (
     <div className="min-h-screen text-white font-rubik backdrop-blur-[2px] bg-cover bg-no-repeat px-4 md:px-8 py-6" style={{ backgroundImage: `url('/bg-pattern.svg')` }}>
       <h2 className="text-[28.88px] font-extrabold text-[#CCE7F6] mb-1 text-start">Create New Album</h2>
-      <p className="text-[18.77px] font-semibold text-white mb-6 text-start">Create and customize your Snaplink album in just a few steps.</p>
+      <p className="text-[18.77px] font-semibold text-white mb-6 text-start">Create and customize your AniPicx album in just a few steps.</p>
 
       <div className="rounded-[12px] border border-[#40E0D0] p-6 max-h-[80vh] overflow-y-auto custom-scrollbar w-full">
         {/* Basic Album Info */}

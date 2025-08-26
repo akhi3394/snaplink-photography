@@ -38,7 +38,7 @@ const LabSignup = () => {
           <div className="absolute -top-6 sm:-top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-10">
             <img
               src={Logo}
-              alt="Snaplink Logo"
+              alt="AniPicx Logo"
               className="w-[60px] h-[75px] sm:w-[80px] sm:h-[100px] object-contain"
             />
           </div>

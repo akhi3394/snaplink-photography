@@ -63,7 +63,7 @@ const LabSupportContact = () => {
             >
               <img src={item.icon} alt="icon" className="w-[44.79px] h-[44.79px] mr-3" />
               <div className="flex flex-col">
-                <span className="font-rubik font-semibold text-[17.91px] text-[#CCE7F6]">
+                <span className="font-rubik font-semibold text-[17.91px] text-[#CCE7F6] text-start">
                   {item.label}
                 </span>
                 <span className="font-rubik font-semibold text-[14.93px] text-[#A0A0A0]">

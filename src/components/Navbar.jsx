@@ -52,11 +52,11 @@ const Navbar = () => {
           <img
             src={Logo}
             alt="Logo"
-            className="w-[36px] h-[42px] sm:w-[40px] sm:h-[48px] md:w-[46px] md:h-[54px]"
+            className="w-[200px] h-[250px] sm:w-[250px] sm:h-[250px] md:w-[330px] md:h-[270px]"
           />
-          <p className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[30px] text-[#CCE7F6] font-serif">
+          {/* <p className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[30px] text-[#CCE7F6] font-serif">
             AniPicx
-          </p>
+          </p> */}
         </div>
 
         {/* Hamburger Icon for Mobile */}
@@ -146,13 +146,13 @@ const Navbar = () => {
               onClick={handleSignupClick}
               className="bg-[#CCE7F6] rounded-[40.92px] w-[120px] lg:w-[137.54px] h-[35px] lg:h-[39.73px] flex items-center justify-center font-rubik font-semibold text-[#1C1C1C] text-[14px] lg:text-[16px] max-[1512px]:text-[14px] hover:opacity-90 transition"
             >
-              Join SnapLink
+              Join AniPicx
             </button>
             <button
               onClick={handleLoginClick}
               className="bg-transparent rounded-[40.92px] border-2 border-[#CCE7F6] w-[120px] lg:w-[137.54px] h-[35px] lg:h-[39.73px] flex items-center justify-center font-rubik font-semibold text-white text-[14px] lg:text-[16px] max-[1512px]:text-[14px] hover:bg-[#CCE7F6] hover:text-[#1C1C1C] transition"
             >
-              Login SnapLink
+              Login AniPicx
             </button>
           </div>
         </div>
@@ -219,13 +219,13 @@ const Navbar = () => {
               onClick={handleSignupClick}
               className="bg-[#CCE7F6] rounded-[40.92px] w-[120px] h-[35px] flex items-center justify-center font-rubik font-semibold text-[#1C1C1C] text-[14px] hover:opacity-90 transition"
             >
-              Join SnapLink
+              Join AniPicx
             </button>
             <button
               onClick={handleLoginClick}
               className="bg-transparent rounded-[40.92px] border-2 border-[#CCE7F6] w-[120px] h-[35px] flex items-center justify-center font-rubik font-semibold text-white text-[14px] hover:bg-[#CCE7F6] hover:text-[#1C1C1C] transition"
             >
-              Login SnapLink
+              Login AniPicx
             </button>
           </div>
         </div>

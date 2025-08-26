@@ -102,11 +102,11 @@ const DashboardLayout = () => {
           ×
         </button>
 
-        <div className="mb-8">
-          <img src={Logo} alt="Snaplink Logo" className="w-24 h-auto mx-auto" />
-          <p className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[30px] text-[#CCE7F6] font-serif">
+        <div className="">
+          <img src={Logo} alt="AniPicx Logo" className="w-[260px] h-[250px]" />
+          {/* <p className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[30px] text-[#CCE7F6] font-serif">
             AniPicx
-          </p>
+          </p> */}
         </div>
 
         <nav className="space-y-4 flex-grow">
