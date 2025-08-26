@@ -60,7 +60,7 @@ const Contact = () => {
                 alt="icon"
                 className="w-[44.79px] h-[44.79px] mr-3 sm:w-8 sm:h-8"
               />
-              <div className="flex flex-col w-[200px]">
+              <div className="flex flex-col w-[150px] xl:w-full">
                 <span className="font-rubik font-semibold text-xl text-start text-[17.91px] text-[#CCE7F6] sm:text-sm sm:block whitespace-normal break-words">
                   {item.label}
                 </span>
